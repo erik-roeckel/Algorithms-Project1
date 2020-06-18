@@ -1,0 +1,4 @@
+
+Attempted approach to user_history.txt:
+
+For storing the user history I wanted to use another DLBtrie. This would have worked pretty similarly to making the DLB for the dictionary, with the exception of a few cases. I would have used the initializeTrie() method to first initialize the trie and then read user_history.txt into it using a BufferedReader, just like was done with dictionary.txt. The tricky part was trying to add a word to user_history.txt if it was not found in dictionary. For the autocompletion however, I was planning on including an extra field in my DLBnode inner class which would have been a frequency counter counting up the amount of times that given word had been entered previously. This is how i was planning on handling the precedence dilemma
